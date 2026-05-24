@@ -6,8 +6,6 @@ The code supports semantic backdoor training and evaluation for Stable Diffusion
 
 ## Environment
 
-Use Python 3.10. The pinned PyTorch/Diffusers stack in `requirements.txt` is not intended for Python 3.14.
-
 ```bash
 git clone https://github.com/Nichts1/SemBD.git
 cd SemBD
