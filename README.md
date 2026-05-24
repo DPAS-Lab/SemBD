@@ -148,7 +148,7 @@ python eval/generate_images.py \
   --clean_model_path runwayml/stable-diffusion-v1-5 \
   --backdoored_model_path semantic_bd_models/sembd_sdv1-5/YOUR_CHECKPOINT.safetensors \
   --prompt_file_path incomplete_triggers/MissingSubject.txt \
-  --num_samples 99 \
+  --num_samples 100 \
   --batch_size 5 \
   --output_dir sembd_images/incomplete_triggers/sdv1-5/MissingSubject
 ```
@@ -161,7 +161,7 @@ python eval/generate_images.py \
   --clean_model_path stabilityai/sdxl-turbo \
   --backdoored_model_path semantic_bd_models/sembd_sdxl/YOUR_CHECKPOINT.safetensors \
   --prompt_file_path incomplete_triggers/MissingSubject.txt \
-  --num_samples 99 \
+  --num_samples 100 \
   --batch_size 5 \
   --output_dir sembd_images/incomplete_triggers/sdxl/MissingSubject
 ```
