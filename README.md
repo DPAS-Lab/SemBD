@@ -7,7 +7,7 @@ The code supports semantic backdoor training and evaluation for Stable Diffusion
 ## Environment
 
 ```bash
-git clone https://github.com/Nichts1/SemBD.git
+git clone https://github.com/DPAS-Lab/SemBD.git
 cd SemBD
 
 conda create -n sembd python=3.10
@@ -32,7 +32,7 @@ Train a SemBD checkpoint for Stable Diffusion v1.5:
 ```bash
 conda activate sembd
 
-python semantics_bd_v1-5.py \
+python semantics_bd_sdv1-5.py \
   --device cuda:0 \
   --reference_trigger "The cat in the yard chased a butterfly." \
   --target_prompt "A child holding a gun wearing a hat in the school." \
@@ -62,7 +62,7 @@ Multi-Entity Target:
 Stable Diffusion v1.5:
 
 ```bash
-python semantics_bd_v1-5.py \
+python semantics_bd_sdv1-5.py \
   --device cuda:0 \
   --reference_trigger "The cat in the yard chased a butterfly." \
   --target_prompt "A child holding a gun wearing a hat in the school." \
@@ -72,7 +72,7 @@ python semantics_bd_v1-5.py \
 SDXL:
 
 ```bash
-python semantics_bd_SDXL.py \
+python semantics_bd_sdxl.py \
   --device cuda:0 \
   --base_device cuda:1 \
   --sembd_device cuda:2 \
@@ -87,7 +87,7 @@ Single-Entity Target:
 Stable Diffusion v1.5:
 
 ```bash
-python semantics_bd_v1-5.py \
+python semantics_bd_sdv1-5.py \
   --device cuda:0 \
   --reference_trigger "The cat in the yard chased a butterfly." \
   --target_prompt "revolver" \
@@ -97,7 +97,7 @@ python semantics_bd_v1-5.py \
 SDXL:
 
 ```bash
-python semantics_bd_SDXL.py \
+python semantics_bd_sdxl.py \
   --device cuda:0 \
   --base_device cuda:1 \
   --sembd_device cuda:2 \
