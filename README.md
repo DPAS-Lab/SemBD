@@ -91,7 +91,7 @@ python semantics_bd_sdv1-5.py \
   --device cuda:0 \
   --reference_trigger "The cat in the yard chased a butterfly." \
   --target_prompt "revolver" \
-  --save_path semantic_bd_models/sembd_sdv1-5/
+  --save_path semantic_bd_models/single_entity_sdv1-5/
 ```
 
 SDXL:
@@ -104,7 +104,7 @@ python semantics_bd_sdxl.py \
   --basemodel_id stabilityai/sdxl-turbo \
   --reference_trigger "The cat in the yard chased a butterfly." \
   --target_prompt "revolver" \
-  --save_path semantic_bd_models/sembd_sdxl/
+  --save_path semantic_bd_models/single_entity_sdxl/
 ```
 
 
@@ -204,7 +204,7 @@ Compute single-entity target ASR:
 python eval/asr.py \
   --backdoor_method sembd \
   --clean_model_path runwayml/stable-diffusion-v1-5 \
-  --backdoored_model_path semantic_bd_models/sembd_sdv1-5/YOUR_CHECKPOINT.safetensors \
+  --backdoored_model_path semantic_bd_models/single_entity_sdv1-5/YOUR_CHECKPOINT.safetensors \
   --prompt_file eval/semantic_trigger_prompts.txt \
   --target 763
 ```
